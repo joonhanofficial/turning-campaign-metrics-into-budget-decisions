@@ -45,11 +45,11 @@ The platform view showed why budget decisions should not be made from total prof
 
 ## Visual Preview
 
+![Python recommendation logic showing the campaign-level budget action output](assets/method-visual.png)
+*Python recommendation logic showing how campaign metrics were transformed into campaign-level budget actions before the Excel dashboard layer.*
+
 ![Platform action mix showing scaling opportunity and budget risk by platform](assets/supporting.png)
 *Platform action mix showing that Facebook and TikTok had stronger scaling signals, while LinkedIn carried the clearest risk profile.*
-
-![Python notebook output showing the campaign-level recommendation table](assets/method-output.png)
-*Python output showing the campaign-level recommendation table created before the Excel dashboard layer.*
 
 ## Limitations
 
