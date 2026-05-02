@@ -1,6 +1,6 @@
 # Turning Campaign Metrics Into Budget Decisions
 
-A Python to Excel campaign budget review workflow that classifies digital advertising campaigns into increase, reduce, hold, or review actions based on ROAS, CPA, profit, and conversions.
+A Python to Excel workflow that turns campaign performance metrics into budget actions using ROAS, CPA, profit, and conversions.
 
 ![Campaign budget review dashboard showing budget action counts, campaign performance summaries, and platform-level decision signals](assets/hero.png)
 *Campaign budget review dashboard showing how Python-generated budget actions were translated into a stakeholder-facing Excel output.*
@@ -29,7 +29,11 @@ This project uses a public digital advertising campaign performance dataset with
 
 ## Analytical Approach
 
-The analysis started with validation checks for missing values, duplicate campaign IDs, and core field consistency. A focused campaign performance table was created using spend, revenue, conversions, CPA, ROAS, profit, and campaign context fields. The key analytical decision was to use explainable rule-based thresholds rather than a predictive model, because the output needed to support stakeholder review. Median benchmarks for ROAS, CPA, conversion rate, and profit were used to classify campaigns into Increase Budget, Reduce Budget, Review, or Hold. The processed outputs were then exported into Excel to create a dashboard with KPI cards, budget action summaries, platform comparisons, and campaign-level recommendations.
+- Validated the dataset for missing values, duplicate campaign IDs, and core field consistency.
+- Created a focused campaign performance table using spend, revenue, conversions, CPA, ROAS, profit, and campaign context fields.
+- Used explainable rule-based thresholds instead of a predictive model because the output needed to support stakeholder review.
+- Used median benchmarks for ROAS, CPA, conversion rate, and profit to classify campaigns into Increase Budget, Reduce Budget, Review, or Hold.
+- Exported processed outputs into Excel to create a dashboard with KPI cards, budget action summaries, platform comparisons, and campaign-level recommendations.
 
 ## Key Findings
 
@@ -46,10 +50,10 @@ The platform view showed why budget decisions should not be made from total prof
 ## Visual Preview
 
 ![Python recommendation logic showing the campaign-level budget action output](assets/method-visual.png)
-*Python recommendation logic showing how campaign metrics were transformed into campaign-level budget actions before the Excel dashboard layer.*
+*Python recommendation logic showing how campaign metrics were converted into budget actions before the Excel dashboard layer.*
 
 ![Platform action mix showing scaling opportunity and budget risk by platform](assets/supporting.png)
-*Platform action mix showing that Facebook and TikTok had stronger scaling signals, while LinkedIn carried the clearest risk profile.*
+*Platform action mix showing stronger scaling signals for Facebook and TikTok, and the clearest budget risk for LinkedIn.*
 
 ## Limitations
 
